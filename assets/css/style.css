@@ -1,0 +1,24 @@
+.fonte_intro {
+    font-size:30px
+}
+.fonte_titulos {
+    font-size:48px
+}
+.fonte_descricao {
+    font-size:26px
+}
+.fonte_texto {
+    font-size:26px
+}
+.fonte_titulo_aula{
+    font-size: 42px
+}
+.fonte_subtitulo_aula{
+    font-size: 36px
+}
+.fonte_sub_subtitulo_aula{
+    font-size: 30px
+}
+ul {
+  padding-left: 25px;
+}
