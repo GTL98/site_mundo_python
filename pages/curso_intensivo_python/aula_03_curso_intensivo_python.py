@@ -17,6 +17,7 @@ with open('./assets/css/style.css', 'r') as css:
 st.image('./assets/imagens/curso_intensivo_python/aula_03/aula_03.png')
 
 # --- Introdução --- #
+st.html('<h1 class="fonte_titulo_aula">Introdução</h1>')
 st.html('<p class="fonte_texto">Neste capítulo e no próximo, você aprenderá o que são listas e como '
         'começar a trabalhar com os elementos em uma lista. As listas permitem que você armazene conjuntos '
         'de informações em um só lugar, quer você tenha apenas alguns itens ou milhões de itens. As listas '
@@ -324,7 +325,7 @@ st.html('<p class="fonte_texto"><b>Exercício 04:</b> Se você pudesse convidar 
         'para jantar, quem você convidaria? Faça uma lista que inclua pelo menos três pessoas que você '
         'gostaria de convidar para jantar. Então use sua lista para imprimir uma mensagem para cada '
         'pessoa, convidando-as para jantar.</p>')
-with st.expander('Repsosta'):
+with st.expander('Resposta'):
     st.code("""# --- Lista com os convidados --- #
 convidados = ['Vivaldi', 'Bach', 'Mozart']
 
@@ -332,3 +333,379 @@ convidados = ['Vivaldi', 'Bach', 'Mozart']
 print(f'Compareça ao meu jantar, {convidados[0]} e toque Primavera!')
 print(f'Compareça ao meu jantar, {convidados[1]} e anime o pessoal com o Bourée em E menor')
 print(f'Compareça ao meu jantar, {convidados[2]} e divirta o pessoal com Sonata No. 16 em C maior')""", line_numbers=True)
+st.html('<p class="fonte_texto"><b>Exercício 05:</b> Você acabou de ouvir que um dos seus convidados '
+        'não pode ir ao jantar, então você precisa enviar um novo conjunto de convites. Você terá que '
+        'pensar em outra pessoa para convidar:</p>')
+st.html('<ul class="fonte_texto">'
+        '<li>Comece com seu programa do exercício 4. Adicione uma chamada <b>print()</b> no final do seu '
+        'programa, informando o nome do convidado que não pode comparecer.</li>'
+        '<li>Modifique sua lista, substituindo o nome do convidado que não pode comparecer pelo nome '
+        'da nova pessoa que você está convidando.</li>'
+        '<li>Imprima um segundo conjunto de mensagens de convite, uma para cada pessoa que ainda '
+        'está na sua lista.</li>'
+        '</ul>')
+with st.expander('Resposta'):
+        st.code('''# --- Lista com os convidados --- #
+convidados = ['Vivaldi', 'Bach', 'Mozart']
+
+# --- Avisar qual convidado não pode comparecer --- #
+print(f'O convidado {convidados[1]} não pode comparecer')
+
+# --- Trocar o convidado que não pode comparecer --- #
+convidados[1] = 'Handel'
+
+# --- Escrever a mensagem do convite --- #
+print(f'Compareça ao meu jantar, {convidados[0]} e toque Primavera!')
+print(f'Compareça ao meu jantar, {convidados[1]} e toque Hallelujah')
+print(f'Compareça ao meu jantar, {convidados[2]} e divirta o pessoal com Sonata No. 16 em C maior')''', line_numbers=True)
+st.html('<p class="fonte_texto"><b>Exercício 06:</b> Você acabou de encontrar uma mesa de jantar maior, '
+        'então agora há mais espaço disponível. Pense em mais três convidados para convidar para '
+        'o jantar:</p>')
+st.html('<ul class="fonte_texto">'
+        '<li>Comece com seu programa do exercício 4 ou 5. Adicione uma chamada <b>print()</b> ao final do '
+        'seu programa, informando às pessoas que você encontrou uma mesa maior.</li>'
+        '<li>Use <b>insert()</b> para adicionar um novo convidado ao início da sua lista.</li>'
+        '<li>Use <b>insert()</b> para adicionar um novo convidado no meio da sua lista.</li>'
+        '<li>Use <b>append()</b> para adicionar um novo convidado ao final da sua lista.</li>'
+        '<li>Imprima um novo conjunto de mensagens de convite, uma para cada pessoa na sua lista.</li>'
+        '</ul>')
+with st.expander('Resposta'):
+        st.code('''# --- Lista com os convidados --- #
+convidados = ['Vivaldi', 'Bach', 'Mozart']
+
+# --- Inserir mais convidados --- #
+convidados.insert(0, 'Salieri')
+convidados.insert(2, 'Handel')
+
+# --- Adicionar ao final da lista o último convidado --- #
+convidados.append('Beethoven')
+
+# --- Escrever a mensagem do convite --- #
+print(f'{convidados[0]}, venha para a minha festa! Há uma mesa maior dessa vez!')
+print(f'{convidados[1]}, venha para a minha festa! Há uma mesa maior dessa vez!')
+print(f'{convidados[2]}, venha para a minha festa! Há uma mesa maior dessa vez!')
+print(f'{convidados[3]}, venha para a minha festa! Há uma mesa maior dessa vez!')
+print(f'{convidados[4]}, venha para a minha festa! Há uma mesa maior dessa vez!')
+print(f'{convidados[5]}, venha para a minha festa! Há uma mesa maior dessa vez!')''', line_numbers=True)
+st.html('<p class="fonte_texto"><b>Exercício 07:</b> Você acabou de descobrir que sua nova mesa de jantar '
+        'não chegará a tempo para o jantar e agora você tem espaço para apenas dois convidados:</p>')
+st.html('<ul class="fonte_texto">'
+        '<li>Comece com seu programa do exercício 6. Adicione uma nova linha que imprima uma mensagem dizendo '
+        'que você pode convidar apenas duas pessoas para o jantar.</li>'
+        '<li>Use <b>pop()</b> para remover convidados da sua lista, um de cada vez, até que restem apenas dois '
+        'nomes na sua lista. Cada vez que você remover um nome da sua lista, imprima uma mensagem para essa '
+        'pessoa informando que você lamenta não poder convidá-la para jantar.</li>'
+        '<li>Imprima uma mensagem para cada uma das duas pessoas que ainda estão na sua lista, informando '
+        'que ainda estão convidadas.</li>'
+        '<li>Use <b>del</b> para remover os dois últimos nomes da sua lista, para que você tenha uma lista '
+        'vazia. Imprima sua lista para ter certeza de que você realmente tem uma lista vazia no final do seu '
+        'programa.</li>'
+        '</ul>')
+with st.expander('Resposta'):
+        st.code('''# --- Lista com os convidados --- #
+convidados = ['Vivaldi', 'Bach', 'Mozart']
+
+# --- Inserir mais convidados --- #
+convidados.insert(0, 'Salieri')
+convidados.insert(2, 'Handel')
+
+# --- Adicionar ao final da lista o último convidado --- #
+convidados.append('Beethoven')
+
+# --- Mensagem que só posso conidar duas pessoas --- #
+print('Perdão pelo transtono, mas só posso convidar duas pessoas')
+
+# --- Retirar os convidados da lista --- #
+convidado_1 = convidados.pop()
+convidado_2 = convidados.pop()
+convidado_3 = convidados.pop()
+convidado_4 = convidados.pop()
+
+# --- Mensagem para cada convidado retirado da lista --- #
+print(f'Desculpe o transtorno, {convidado_1}, mas você não está mais convidado')
+print(f'Desculpe o transtorno, {convidado_2}, mas você não está mais convidado')
+print(f'Desculpe o transtorno, {convidado_3}, mas você não está mais convidado')
+print(f'Desculpe o transtorno, {convidado_4}, mas você não está mais convidado')
+
+# --- Mensagem para os convidados que ainda estão na lista --- #
+print(f'{convidados[0]}, você ainda está convidado para a festa')
+print(f'{convidados[1]}, você ainda está convidado para a festa')
+
+# --- Deletar os convidados da lista --- #
+del convidados[0]
+del convidados[0]
+
+# --- Mostrar que a lista de convidados está vazia --- #
+print(f'Lista de convidados: {convidados}')''', line_numbers=True)
+
+
+# --- Organizando uma lista --- #
+st.write('---')
+st.html('<h1 class="fonte_titulo_aula">O que é uma lista?</h1>')
+st.html('<p class="fonte_texto">Frequentemente, suas listas serão criadas em uma ordem imprevisível, '
+        'porque você nem sempre pode controlar a ordem em que seus usuários fornecem seus dados. Embora '
+        'isso seja inevitável na maioria das circunstâncias, você frequentemente desejará apresentar suas '
+        'informações em uma ordem específica. Às vezes, você desejará preservar a ordem original de sua '
+        'lista e, outras vezes, desejará alterar a ordem original. O Python fornece várias maneiras '
+        'diferentes de organizar suas listas, dependendo da situação.</p>')
+st.html('<h2 class="fonte_subtitulo_aula">Classificando uma lista permanentemente com o método '
+        '<b>sort()</b></h2>')
+st.html('<p class="fonte_texto">O método <b>sort()</b> do Python torna relativamente fácil classificar '
+        'uma lista. Imagine que temos uma lista de carros e queremos alterar a ordem da lista para '
+        'armazená-los em ordem alfabética. Para manter a tarefa simples, vamos supor que todos os valores '
+        'na lista sejam minúsculos:</p>')
+st.code('''carros = ['bmw', 'audi', 'toyota', 'subaru']
+carros.sort()
+print(carros)''', line_numbers=True)
+st.html('<p class="fonte_texto">O método <b>sort()</b> altera a ordem da lista permanentemente. Os carros '
+        'agora estão em ordem alfabética, e nunca podemos reverter para a ordem original. Você também pode '
+        'classificar esta lista em ordem alfabética reversa passando o argumento <b>reverse=True</b> para '
+        'o método <b>sort()</b>. O exemplo a seguir classifica a lista de carros em ordem alfabética '
+        'reversa:</p>')
+st.code('''carros = ['bmw', 'audi', 'toyota', 'subaru']
+carros.sort(reverse=True)
+print(carros)''')
+st.html('<p class="fonte_texto">Novamente, a ordem da lista é alterada permanentemente.</p>')
+st.html('<h2 class="fonte_subtitulo_aula">Classificando uma lista temporariamente com a função '
+        '<b>sorted()</b></h2>')
+st.html('<p class="fonte_texto">Para manter a ordem original de uma lista, mas apresentá-la em uma ordem '
+        'classificada, você pode usar a função <b>sorted()</b>. A função <b>sorted()</b> permite que você '
+        'exiba sua lista em uma ordem específica, mas não afeta a ordem real da lista. Vamos tentar esta '
+        'função na lista de carros:</p>')
+st.code(r'''carros = ['bmw', 'audi', 'toyota', 'subaru']
+
+print('Lista original:')  # 1
+print(carros)
+
+print('\nLista ordenada:')  # 2
+print(sorted(carros))
+
+print('\nLista original de volta:')  # 3
+print(carros)''', line_numbers=True)
+st.html('<p class="fonte_texto">Primeiro imprimimos a lista em sua ordem original (1) e depois em ordem '
+        'alfabética (2). Depois que a lista é exibida na nova ordem, mostramos que a lista ainda está '
+        'armazenada em sua ordem original (3).</p>')
+st.html('<p class="fonte_texto">Observe que a lista ainda existe em sua ordem original após a função '
+        '<b>sorted()</b> ter sido usada. A função <b>sorted()</b> também pode aceitar um argumento '
+        '<b>reverse=True</b> se você quiser exibir uma lista em ordem alfabética reversa.</p>')
+st.html('<p class="fonte_texto">Classificar uma lista alfabeticamente é um pouco mais complicado quando '
+        'todos os valores não estão em minúsculas. Há várias maneiras de interpretar letras maiúsculas '
+        'ao determinar uma ordem de classificação, e especificar a ordem exata pode ser mais complexo do '
+        'que queremos lidar neste momento. No entanto, a maioria das abordagens para classificação se '
+        'baseará diretamente no que você aprendeu nesta seção.</p>')
+st.html('<h2 class="fonte_subtitulo_aula">Imprimindo uma lista em ordem reversa</h2>')
+st.html('<p class="fonte_texto">Para reverter a ordem original de uma lista, você pode usar o método '
+        '<b>reverse()</b>. Se originalmente armazenássemos a lista de carros em ordem cronológica de '
+        'acordo com quando os possuímos, poderíamos facilmente reorganizar a lista em ordem cronológica '
+        'reversa:</p>')
+st.code('''carros = ['bmw', 'audi', 'toyota', 'subaru']
+print(carros)
+
+carros.reverse()
+print(carros)''', line_numbers=True)
+st.html('<p class="fonte_texto">Observe que <b>reverse()</b> não classifica alfabeticamente para trás; '
+        'ele simplesmente inverte a ordem da lista. Esse método altera a ordem de uma lista '
+        'permanentemente, mas você pode reverter para a ordem original a qualquer momento aplicando '
+        '<b>reverse()</b> à mesma lista uma segunda vez.</p>')
+st.html('<h2 class="fonte_subtitulo_aula">Encontrando o comprimento de uma lista</h2>')
+st.html('<p class="fonte_texto">Você pode encontrar rapidamente o comprimento de uma lista usando a função '
+        '<b>len()</b>. A lista neste exemplo tem quatro itens, então seu comprimento é 4:</p>')
+st.code('''carros = ['bmw', 'audi', 'toyota', 'subaru']
+len(carros)''', line_numbers=True)
+st.html('<p class="fonte_texto">Você achará <b>len()</b> útil quando precisar identificar o número de '
+        'alienígenas que ainda precisam ser abatidos em um jogo, determinar a quantidade de dados que '
+        'você precisa gerenciar em uma visualização ou descobrir o número de usuários registrados em '
+        'um site, entre outras tarefas.</p>')
+st.html('<p class="fonte_texto">O Python conta os itens em uma lista começando com 1, então você não deve '
+        'encontrar erros de defasagem de um ao determinar o comprimento de uma lista.</p>')
+st.html('<h2 class="fonte_subtitulo_aula">Tente você mesmo!</h2>')
+st.html('<p class="fonte_texto"><b>Exercício 08:</b> Pense em pelo menos cinco lugares no mundo que '
+        'você gostaria de visitar:</p>')
+st.html('<ul class="fonte_texto">'
+        '<li>Armazene os locais em uma lista. Certifique-se de que a lista não esteja em ordem '
+        'alfabética.</li>'
+        '<li>Imprima sua lista na ordem original. Não se preocupe em imprimir a lista ordenadamente; '
+        'apenas imprima-a como uma lista Python bruta.</li>'
+        '<li>Use <b>sorted()</b> para imprimir sua lista em ordem alfabética sem modificar a lista '
+        'real.</li>'
+        '<li>Mostre que sua lista ainda está na ordem original imprimindo-a.</li>'
+        '<li>Use <b>sorted()</b> para imprimir sua lista em ordem alfabética reversa sem alterar a '
+        'ordem da lista original.</li>'
+        '<li>Mostre que sua lista ainda está na ordem original imprimindo-a novamente.</li>'
+        '<li>Use <b>reverse()</b> para alterar a ordem da sua lista. Imprima a lista para mostrar que '
+        'sua ordem mudou.</li>'
+        '<li>Use <b>reverse()</b> para alterar a ordem da sua lista novamente. Imprima a lista para '
+        'mostrar que ela voltou à ordem original.</li>'
+        '<li>Use <b>sort()</b> para alterar sua lista para que ela seja armazenada em ordem alfabética. '
+        'Imprima a lista para mostrar que sua ordem foi alterada.</li>'
+        '<li>Use <b>sort()</b> para alterar sua lista para que ela seja armazenada em ordem alfabética '
+        'reversa. Imprima a lista para mostrar que sua ordem mudou.</li>'
+        '</ul>')
+with st.expander('Resposta'):
+        st.code('''# --- Lista com os lugares --- #
+lugares = ['Treviso', 'Houston', 'Las Vegas', 'Paris']
+
+# --- Lista original --- #
+print(f'Lista original: {lugares}')
+
+# --- Lista ordenada temporariamente --- #
+print(f'Lista ordenada temporariamente: {sorted(lugares)}')
+
+# --- Lista original --- #
+print(f'Lista original: {lugares}')
+
+# --- Lista ordenada de modo reverso temporariamente --- #
+print(f'Lista ordenada de modo reverso temporariamente: {sorted(lugares, reverse=True)}')
+
+# --- Lista original --- #
+print(f'Lista original: {lugares}')
+
+# --- Lista no modo reverso permanentemente --- #
+lugares.reverse()
+print(f'Lista no modo reverso permanentemente: {lugares}')
+
+# --- Lista na ordem original --- #
+lugares.reverse()
+print(f'Lista na ordem original: {lugares}')
+
+# --- Lista ordenada permanentemente --- #
+lugares.sort()
+print(f'Lista ordenada permanetemente: {lugares}')
+
+# --- Lista ordenada de modo reverso permanentemente --- #
+lugares.sort(reverse=True)
+print(f'Lista ordenada de modo reverso permanentemente: {lugares})''', line_numbers=True)
+st.html('<p class="fonte_texto"><b>Exercício 09:</b> Trabalhando com um dos programas dos exercícios 4 a 7, '
+        'use <b>len()</b> para imprimir uma mensagem indicando o número de pessoas que você está convidando para '
+        'jantar.</p>')
+with st.expander('Resposta'):
+        st.code('''# --- Lista com os convidados --- #
+convidados = ['Vivaldi', 'Bach', 'Mozart']
+print(f'Quantidade de convidados: {len(convidados)}')
+
+# --- Inserir mais convidados --- #
+convidados.insert(0, 'Salieri')
+print(f'Quantidade de convidados: {len(convidados)}')
+convidados.insert(2, 'Handel')
+print(f'Quantidade de convidados: {len(convidados)}')
+
+# --- Adicionar ao final da lista o último convidado --- #
+convidados.append('Beethoven')
+print(f'Quantidade de convidados: {len(convidados)}')
+
+# --- Retirar os convidados da lista --- #
+convidado_1 = convidados.pop()
+print(f'Quantidade de convidados: {len(convidados)}')
+
+convidado_2 = convidados.pop()
+print(f'Quantidade de convidados: {len(convidados)}')
+
+convidado_3 = convidados.pop()
+print(f'Quantidade de convidados: {len(convidados)}')
+
+convidado_4 = convidados.pop()
+print(f'Quantidade de convidados: {len(convidados)}')
+
+del convidados[0]
+print(f'Quantidade de convidados: {len(convidados)}')
+
+del convidados[0]
+print(f'Quantidade de convidados: {len(convidados)}')''', line_numbers=True)
+st.html('<p class="fonte_texto"><b>Exercício 09:</b> Pense em coisas que você poderia armazenar em uma '
+        'lista. Por exemplo, você poderia fazer uma lista de montanhas, rios, países, cidades, idiomas ou '
+        'qualquer outra coisa que você queira. Escreva um programa que crie uma lista contendo esses itens '
+        'e então use cada função introduzida neste capítulo pelo menos uma vez.</p>')
+with st.expander('Resposta'):
+        st.code('''# --- Lista de compras --- #
+compras = ['macarrão', 'arroz', 'manteiga', 'feijão']
+print(f'Lista original: {compras}')
+
+# --- Adicionar um item ao final da lista --- #
+compras.append('banana')
+print(f'Lista adicionado (append): {compras}')
+
+# --- Adicionar um item em qualquer posição da lista --- #
+compras.insert(2, 'uva')
+print(f'Lista adicionado (insert): {compras}')
+
+# --- Remover um item pelo índice --- #
+del compras[0]
+print(f'Lista com um item removido pelo índice: {compras}')
+
+# --- Retirar e obter o último item da lista --- #
+ultimo_item = compras.pop()
+print(f'Último item: {ultimo_item}')
+print(f'Lista sem o último item: {compras}')
+
+# --- Remover um item pelo valor --- #
+valor_removido = 'feijão'
+print(f'Valor removido: {valor_removido}')
+compras.remove(valor_removido)
+
+print(f'Lista com um item removido pelo valor: {compras}')
+
+# --- Ordenar de modo alfabético temporariamente --- #
+print(f'Lista de compras ordenada alfabeticamente temporariamente: {sorted(compras)}')
+
+# --- Inverter a ordem de entrada da lista --- #
+compras.reverse()
+print(f'Lista com a ordem de entrada invertida: {compras}')
+
+# --- Ordenar alfabeticamente de modo permanente --- #
+compras.sort()
+print(f'Lista ordenada alfabeticamente de modo permanente: {compras}')''', line_numbers=True)
+
+# --- Evitando erros de índice ao trabalhar com listas --- #
+st.write('---')
+st.html('<h1 class="fonte_titulo_aula">Evitando erros de índice ao trabalhar com listas</h1>')
+st.html('<p class="fonte_texto">Há um tipo de erro que é comum ver quando você está trabalhando com listas '
+        'pela primeira vez. Digamos que você tem uma lista com três itens e pede o quarto item:</p>')
+st.code('''motos = ['honda', 'yamaha', 'suzuki']
+print(motos[3])''', line_numbers=True)
+st.html('<p class="fonte_texto">Este exemplo resulta em um <i>erro de índice</i>.</p>')
+st.html('<p class="fonte_texto">O Python tenta fornecer o item no índice 3. Mas quando ele pesquisa a '
+        'lista, nenhum item em motos tem um índice de 3. Devido à natureza de defasagem de um da indexação '
+        'em listas, esse erro é típico. As pessoas acham que o terceiro item é o item número 3, porque '
+        'começam a contar em 1. Mas no Python o terceiro item é o número 2, porque começa a indexação '
+        'em 0.</p>')
+st.html('<p class="fonte_texto">Um erro de índice significa que o Python não consegue encontrar um item '
+        'no índice que você solicitou. Se um erro de índice ocorrer no seu programa, tente ajustar o '
+        'índice que você está solicitando em 1. Em seguida, execute o programa novamente para ver se os '
+        'resultados estão corretos.</p>')
+st.html('<p class="fonte_texto">Tenha em mente que sempre que você quiser acessar o último item de uma '
+        'lista, você deve usar o índice <b>-1</b>. Isso sempre funcionará, mesmo que sua lista tenha '
+        'mudado de tamanho desde a última vez que você a acessou:</p>')
+st.code('print(motos[-1]', line_numbers=True)
+st.html('<p class="fonte_texto">O índice <b>-1</b> sempre retorna o último item de uma lista, neste caso '
+        'o valor <b>"suzuki"</b>. A única vez que essa abordagem causará um erro é quando você solicita '
+        'o último item de uma lista vazia:</p>')
+st.code('''motos = []
+print(motos[-1])''', line_numbers=True)
+st.html('<p class="fonte_texto">Não há itens em <b>motos</b>, então Python retorna outro erro de índice. '
+        'Se ocorrer um erro de índice e você não conseguir descobrir como resolvê-lo, tente imprimir sua '
+        'lista ou apenas imprimir o comprimento da lista. Sua lista pode parecer muito diferente do que '
+        'você pensou que era, especialmente se ela foi gerenciada dinamicamente pelo seu programa. Ver a '
+        'lista real, ou o número exato de itens na sua lista, pode ajudar a resolver esses erros '
+        'lógicos.</p>')
+st.html('<h2 class="fonte_subtitulo_aula">Tente você mesmo!</h2>')
+st.html('<p class="fonte_texto"><b>Exercício 11:</b> Se você ainda não recebeu um erro de índice em um '
+        'dos seus programas, tente fazer um acontecer. Altere um índice em um dos seus programas para '
+        'produzir um erro de índice. Certifique-se de corrigir o erro antes de fechar o programa.</p>')
+with st.expander('Resposta'):
+        st.code('''# --- Criar a lista --- #
+compras = ['arroz', 'feijão', 'banana']
+
+# --- Gerar o erro --- #
+print(compras[3])''', line_numbers=True)
+
+# --- Resumo --- #
+st.html('<h1 class="fonte_titulo_aula">Resumo</h1>')
+st.html('<p class="fonte_texto">Neste capítulo, você aprendeu o que são listas e como trabalhar com os '
+        'itens individuais em uma lista. Você aprendeu como definir uma lista e como adicionar e remover '
+        'elementos. Você aprendeu como classificar listas permanentemente e temporariamente para fins de '
+        'exibição. Você também aprendeu como encontrar o comprimento de uma lista e como evitar erros de '
+        'índice ao trabalhar com listas.</p>')
+st.html('<p class="fonte_texto">No Capítulo 4, você aprenderá como trabalhar com itens em uma lista de '
+        'forma mais eficiente. Ao fazer um loop em cada item em uma lista usando apenas algumas linhas de '
+        'código, você poderá trabalhar de forma eficiente, mesmo quando sua lista contiver milhares ou '
+        'milhões de itens.</p>')

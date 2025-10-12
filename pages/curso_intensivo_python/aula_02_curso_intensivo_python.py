@@ -17,6 +17,7 @@ with open('./assets/css/style.css', 'r') as css:
 st.image('./assets/imagens/curso_intensivo_python/aula_02/aula_02.png')
 
 # --- Introdução --- #
+st.html('<h1 class="fonte_titulo_aula">Introdução</h1>')
 st.html('<p class="fonte_texto">Neste capítulo você aprenderá sobre os diferentes tipos de dados com os '
         'quais pode trabalhar em seus programas Python. Você também aprenderá como usar variáveis para '
         'representar dados em seus programas.</p>')
