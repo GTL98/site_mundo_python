@@ -14,6 +14,10 @@ pg = st.navigation(
         'IA com Scikit-Learn, Keras e Tensorflow': [
             st.Page('./pages/ia_scikit_learn_keras_tensorflow/menu_ia_scikit_learn_keras_tensorflow.py', title='Aulas'),
             st.Page('./pages/ia_scikit_learn_keras_tensorflow/aula_01_ia_scikit_learn_keras_tensorflow.py', title='Capítulo 01 - O cenário do aprendizado de máquina'),
+        ],
+        'Redes Neurais do Zero': [
+            st.Page('./pages/redes_neurais_zero/menu_redes_neurais_zero.py', title='Aulas'),
+            st.Page('./pages/redes_neurais_zero/aula_01_redes_neurais_zero.py', title='Capítulo 01 - Introdução à Redes Neurais')
         ]
     },
     position='top'
