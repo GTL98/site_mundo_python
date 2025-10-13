@@ -44,7 +44,7 @@ st.html('<p class="fonte_texto">Então, antes de partirmos para explorar o conti
 st.html('<p class="fonte_texto">Este capítulo apresenta muitos conceitos fundamentais (e jargões) que todo '
         'cientista de dados deve saber de cor. Será uma visão geral de alto nível (é o único capítulo sem '
         'muito código), tudo bastante simples, mas você deve ter certeza de que tudo está claro para você '
-        'antes de prosseguir para o resto do livro. Então pegue um café e vamos começar!</p>')
+        'antes de prosseguir para o resto do estudo. Então pegue um café e vamos começar!</p>')
 with st.expander('Dica 1', icon='💡'):
         st.html('<p class="fonte_texto">Se você já conhece todos os fundamentos do aprendizado de máquina,'
                 ' pode pular diretamente para o Capítulo 2. Se não tiver certeza, permaneça neste capítulo '

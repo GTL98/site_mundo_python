@@ -58,6 +58,26 @@ with st.container(border=True):
         if acessar:
             st.switch_page('./pages/ia_scikit_learn_keras_tensorflow/menu_ia_scikit_learn_keras_tensorflow.py')
 
+# --- Redes Neurais do Zero --- #
+with st.container(border=True):
+    colunas = st.columns(2)
+    with colunas[0]:
+        st.image('./assets/imagens/redes_neurais_zero/capa/capa.png')
+    with colunas[1]:
+        st.html('<p class="fonte_titulos"><b>Redes Neurais do Zero</b></p>')
+        st.html('<p class="fonte_descricao">Se você quer aprender como as redes neurais funcionam e '
+                'criar uma com suas próprias mãos, então esse curso é para você! Aqui você aprenderá '
+                'como criar uma rede neural do zero, sem complicação. Com esse material você conseguirá '
+                'dominar as redes neurais e o mundo da IA.</p>')
+        acessar = st.button(
+            label='Acessar',
+            use_container_width=True,
+            key='redes_neurais_zero'
+        )
+        if acessar:
+            st.switch_page('./pages/redes_neurais_zero/menu_redes_neurais_zero.py')
+
+
 # --- Inteligência artificial e ciências de dados para finanças --- #
 # with st.container(border=True):
 #     colunas = st.columns(2)
