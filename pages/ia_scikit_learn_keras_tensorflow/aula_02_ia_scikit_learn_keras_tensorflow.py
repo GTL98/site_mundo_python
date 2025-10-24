@@ -793,7 +793,7 @@ with st.expander('Desing do Scikit-Learn'):
             '(mas às vezes <b>fit_transform()</b> é otimizado e roda muito mais rápido).</p>')
     st.html('<p class="fonte_texto"><i>Preditores</i>: Finalmente, alguns estimadores, dado um conjunto de '
             'dados, são capazes de fazer previsões; eles são chamados de <i>preditores</i>. Por exemplo, o '
-            'modelo <b>LinearRegression</b> do capítulo anterior era um preditor: dado o PIB per capita de '
+            'modelo <b>LinearRegression</b> do <a href="https://mundopython.streamlit.app/aula_01_ia_scikit_learn_keras_tensorflow">capítulo anterior</a> era um preditor: dado o PIB per capita de '
             'um país, previa a satisfação com a vida. Um preditor possui um método <b>predict()</b> que '
             'pega um conjunto de dados de novas instâncias e retorna um conjunto de dados de previsões '
             'correspondentes. Também possui um método <b>score()</b> que mede a qualidade das previsões, '
@@ -1037,7 +1037,7 @@ st.html('<p class="fonte_texto">Estamos quase no final! Você estruturou o probl
 st.html('<h2 class="fonte_subtitulo_aula">Treinamento e avaliação no conjunto de treinamento</h2>')
 st.html('<p class="fonte_texto">A boa notícia é que graças a todas essas etapas anteriores, as coisas '
         'agora serão muito mais simples do que você imagina. Vamos primeiro treinar um modelo de '
-        'Regressão Linear, como fizemos no capítulo anterior:</p>')
+        'Regressão Linear, como fizemos no <a href="https://mundopython.streamlit.app/aula_01_ia_scikit_learn_keras_tensorflow">capítulo anterior</a>:</p>')
 st.code('''from sklearn.linear_model import LinearRegression
 
 reg_lin = LinearRegression()
