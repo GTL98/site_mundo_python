@@ -100,7 +100,7 @@ st.html('<h2 class="fonte_subtitulo_aula">Tente você mesmo!</h2>')
 st.html('<p class="fonte_texto"><b>Exercício 01:</b> Armazene os nomes de alguns dos seus amigos em '
         'uma lista chamada <i>nomes</i>. Imprima o nome de cada pessoa acessando cada elemento na '
         'lista, um de cada vez.</p>')
-with st.expander('Resposta'):
+with st.expander('Repsosta'):
     st.code("""# --- Lista com os nomes --- #
 nomes = ['João', 'Maria', 'Lucas']
 
@@ -112,7 +112,7 @@ st.html('<p class="fonte_texto"><b>Exercício 02:</b> Comece com a lista que voc
         'mas em vez de apenas imprimir o nome de cada pessoa, imprima uma mensagem para elas. O texto '
         'de cada mensagem deve ser o mesmo, mas cada mensagem deve ser personalizada com o nome '
         'da pessoa.</p>')
-with st.expander('Resposta'):
+with st.expander('Repsosta'):
     st.code("""# --- Lista com os nomes --- #
 nomes = ['João', 'Maria', 'Lucas']
 
@@ -123,7 +123,7 @@ print(f'Que bom que você veio, {nomes[2]}')""", line_numbers=True)
 st.html('<p class="fonte_texto"><b>Exercício 03:</b> Pense no seu meio de transporte favorito, como '
         'uma motocicleta ou um carro, e faça uma lista que armazene vários exemplos. Use sua lista para '
         'imprimir uma série de declarações sobre esses itens, como "Eu gostaria de ter uma moto Honda".</p>')
-with st.expander('Resposta'):
+with st.expander('Repsosta'):
     st.code("""# --- Lista com os veículos --- #
 veiculos = ['volvo', 'ford', 'yamaha']
 

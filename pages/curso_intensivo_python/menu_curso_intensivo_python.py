@@ -53,16 +53,18 @@ with colunas[2]:
         )
         if acessar:
             st.switch_page('./pages/curso_intensivo_python/aula_03_curso_intensivo_python.py')
-# with colunas[3]:
-#     with st.container(border=True):
-#         st.image('./assets/imagens/curso_intensivo_python/capa/capa.png')
-#         st.write('Capítulo 04 - Trabalhando com listas')
-#         acessar = st.button(
-#             label='Acessar',
-#             use_container_width=True,
-#             key='aula_04'
-#         )
-#
+with colunas[3]:
+    with st.container(border=True):
+        st.image('./assets/imagens/curso_intensivo_python/capa/capa.png')
+        st.write('Capítulo 04 - Trabalhando com listas')
+        acessar = st.button(
+            label='Acessar',
+            use_container_width=True,
+            key='aula_04'
+        )
+        if acessar:
+            st.switch_page('./pages/curso_intensivo_python/aula_04_curso_intensivo_python.py')
+
 # # --- Colunas para as caixas com as aulas (linha 2)--- #
 # colunas = st.columns(4, vertical_alignment='center')
 # with colunas[0]:

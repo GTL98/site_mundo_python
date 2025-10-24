@@ -20,5 +20,8 @@
     font-size: 30px
 }
 ul {
-  padding-left: 25px;
+    padding-left: 25px;
+}
+ol {
+    padding-left: 25px;
 }

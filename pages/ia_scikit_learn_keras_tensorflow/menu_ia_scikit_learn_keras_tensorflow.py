@@ -29,3 +29,15 @@ with colunas[0]:
         )
         if acessar:
             st.switch_page('./pages/ia_scikit_learn_keras_tensorflow/aula_01_ia_scikit_learn_keras_tensorflow.py')
+
+with colunas[1]:
+    with st.container(border=True):
+        st.image('./assets/imagens/ia_scikit_learn_keras_tensorflow/capa/capa.png')
+        st.write('Capítulo 02 - Projeto de aprendizado de máquina de ponta a ponta')
+        acessar = st.button(
+            label='Acessar',
+            use_container_width=True,
+            key='aula_02'
+        )
+        if acessar:
+            st.switch_page('./pages/ia_scikit_learn_keras_tensorflow/aula_02_scikit_learn_keras_tensorflow.py')

@@ -1,0 +1,11 @@
+#,Column,Non-Null Count,Dtype
+0,longitude,20640,float64
+1,latitude,20640,float64
+2,housing_median_age,20640,float64
+3,total_rooms,20640,float64
+4,total_bedrooms,20433,float64
+5,population,20640,float64
+6,households,20640,float64
+7,median_income,20640,float64
+8,median_house_value,20640,float64
+9,ocean_proximity,20640,object

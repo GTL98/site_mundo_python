@@ -9,11 +9,13 @@ pg = st.navigation(
             st.Page('./pages/curso_intensivo_python/menu_curso_intensivo_python.py', title='Aulas'),
             st.Page('./pages/curso_intensivo_python/aula_01_curso_intensivo_python.py', title='Capítulo 01 - Baixar o Python'),
             st.Page('./pages/curso_intensivo_python/aula_02_curso_intensivo_python.py', title='Capítulo 02 - Variáveis e tipos de dados simples'),
-            st.Page('./pages/curso_intensivo_python/aula_03_curso_intensivo_python.py', title='Capítulo 03 - Introdução à listas')
+            st.Page('./pages/curso_intensivo_python/aula_03_curso_intensivo_python.py', title='Capítulo 03 - Introdução à listas'),
+            st.Page('./pages/curso_intensivo_python/aula_04_curso_intensivo_python.py', title='Capítulo 04 - Trabalhando com listas')
         ],
         'IA com Scikit-Learn, Keras e Tensorflow': [
             st.Page('./pages/ia_scikit_learn_keras_tensorflow/menu_ia_scikit_learn_keras_tensorflow.py', title='Aulas'),
             st.Page('./pages/ia_scikit_learn_keras_tensorflow/aula_01_ia_scikit_learn_keras_tensorflow.py', title='Capítulo 01 - O cenário do aprendizado de máquina'),
+            st.Page('./pages/ia_scikit_learn_keras_tensorflow/aula_02_scikit_learn_keras_tensorflow.py', title='Capítulo 02 - Projeto de aprendizado de máquina de ponta a ponta')
         ],
         'Redes Neurais do Zero': [
             st.Page('./pages/redes_neurais_zero/menu_redes_neurais_zero.py', title='Aulas'),
