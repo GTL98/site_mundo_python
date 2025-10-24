@@ -40,4 +40,4 @@ with colunas[1]:
             key='aula_02'
         )
         if acessar:
-            st.switch_page('./pages/ia_scikit_learn_keras_tensorflow/aula_02_scikit_learn_keras_tensorflow.py')
+            st.switch_page('./pages/ia_scikit_learn_keras_tensorflow/aula_02_ia_scikit_learn_keras_tensorflow.py')
