@@ -19,7 +19,8 @@ pg = st.navigation(
         ],
         'Redes Neurais do Zero': [
             st.Page('./pages/redes_neurais_zero/menu_redes_neurais_zero.py', title='Aulas'),
-            st.Page('./pages/redes_neurais_zero/aula_01_redes_neurais_zero.py', title='Capítulo 01 - Introdução à Redes Neurais')
+            st.Page('./pages/redes_neurais_zero/aula_01_redes_neurais_zero.py', title='Capítulo 01 - Introdução à Redes Neurais'),
+            st.Page('./pages/redes_neurais_zero/aula_02_redes_neurais_zero.py', title='Capítulo 02 - Codando os nossos primeiros neurônios')
         ]
     },
     position='top'

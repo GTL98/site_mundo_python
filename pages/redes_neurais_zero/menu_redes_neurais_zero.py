@@ -29,3 +29,15 @@ with colunas[0]:
         )
         if acessar:
             st.switch_page('./pages/redes_neurais_zero/aula_01_redes_neurais_zero.py')
+
+with colunas[1]:
+    with st.container(border=True):
+        st.image('./assets/imagens/redes_neurais_zero/capa/capa.png')
+        st.write('Capítulo 02 - Codando os nossos primeiros neurônios')
+        acessar = st.button(
+            label='Acessar',
+            use_container_width=True,
+            key='aula_02'
+        )
+        if acessar:
+            st.switch_page('./pages/redes_neurais_zero/aula_02_redes_neurais_zero.py')
