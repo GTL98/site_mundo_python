@@ -29,3 +29,14 @@ with colunas[0]:
         )
         if acessar:
             st.switch_page('./pages/guis_python_pyside2/aula_01_guis_python_pyside2.py')
+with colunas[1]:
+    with st.container(border=True):
+        st.image('./assets/imagens/guis_python_pyside2/capa/capa.png')
+        st.write('Capítulo 02 - Seu primeiro App')
+        acessar = st.button(
+            label='Acessar',
+            use_container_width=True,
+            key='aula_02'
+        )
+        if acessar:
+            st.switch_page('./pages/guis_python_pyside2/aula_02_guis_python_pyside2.py')

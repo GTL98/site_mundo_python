@@ -232,3 +232,19 @@ st.html('<p class="fonte_texto">Você verá uma janela de tamanho fixo, tente re
         'funcionará. Assim como <b>.setFixedSize()</b> você também pode chamar <b>.setMinimumSize()</b>'
         ' e <b>.setMaximumSize()</b> para definir os tamanhos mínimo e máximo respectivamente. '
         'Experimente você mesmo! Você pode usar esses métodos de tamanho em <i>qualquer</i> widget.</p>')
+
+# --- Resumo --- #
+st.write('---')
+st.html('<h1 class="fonte_titulo_aula">Resumo</h1>')
+st.html('<p class="fonte_texto">Nesta Aula 02, aprofundamos a criação de interfaces gráficas com PySide2, '
+        'migrando da janela básica para uma arquitetura de código robusta e escalável. O foco é a '
+        'organização do projeto, onde você aprendeu a utilizar Classes (herança de <b>QMainWindow</b> '
+        'para encapsular e gerenciar a interface de sua aplicação de forma orientada a objetos. Essa '
+        'estruturação é essencial para desenvolver aplicações desktop complexas, garantindo um código '
+        'limpo, modular e fácil de manter à medida que o projeto cresce.</p>')
+st.html('<p class="fonte_texto">A aula também marca o início da construção real da interface através da '
+        'introdução dos primeiros widgets essenciais e dos layouts. Widgets são os componentes '
+        'interativos (como botões e campos de texto), enquanto os layouts são gerenciadores que '
+        'asseguram o posicionamento e o redimensionamento dinâmico dos elementos visuais. Ao dominar o '
+        'uso de classes e layouts, você estará apto a criar janelas bem estruturadas, adaptáveis e '
+        'prontas para receber a lógica de interatividade nos próximos passos do curso.</p>')
