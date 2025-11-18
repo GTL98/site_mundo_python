@@ -25,7 +25,8 @@ pg = st.navigation(
         ],
         'GUIs com Python e PySide2': [
             st.Page('./pages/guis_python_pyside2/menu_guis_python_pyside2.py', title='Aulas'),
-            st.Page('./pages/guis_python_pyside2/aula_01_guis_python_pyside2.py', title='Capítulo 01 - Introdução à GUIs')
+            st.Page('./pages/guis_python_pyside2/aula_01_guis_python_pyside2.py', title='Capítulo 01 - Introdução à GUIs'),
+            st.Page('./pages/guis_python_pyside2/aula_02_guis_python_pyside2.py', title='Capítulo 02 - Seu primeiro App')
         ]
     },
     position='top'
