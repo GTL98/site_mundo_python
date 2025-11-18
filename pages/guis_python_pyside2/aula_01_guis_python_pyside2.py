@@ -145,3 +145,13 @@ with colunas[2]:
       </tr>
     </tbody>
     </table>''')
+
+# --- Resumo --- #
+st.write('---')
+st.html('<h1 class="fonte_titulo_aula">Resumo</h1>')
+st.html('<p class="fonte_texto">Nesta Aula 01, daremos os primeiros passos essenciais no universo das '
+        '<b>Interfaces Gráficas de Usuário</b>(GUIs) com Python, utilizando a poderosa biblioteca '
+        '<b>PySide2</b> (Qt para Python). Você aprenderá a configurar o ambiente e a entender os conceitos '
+        'fundamentais que regem toda aplicação Qt, como o <b>QApplication</b> e o <b>QWidget</b>. O foco '
+        'é criar sua primeira janela funcional, dominando o ciclo de vida básico de um aplicativo desktop '
+        'para iniciar sua jornada no desenvolvimento de software com interfaces ricas e nativas.</p>')
