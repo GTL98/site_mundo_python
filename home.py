@@ -77,6 +77,24 @@ with st.container(border=True):
         if acessar:
             st.switch_page('./pages/redes_neurais_zero/menu_redes_neurais_zero.py')
 
+# --- PySide2 --- #
+with st.container(border=True):
+    colunas = st.columns(2)
+    with colunas[0]:
+        st.image('./assets/imagens/guis_python_pyside2/capa/capa.png')
+    with colunas[1]:
+        st.html('<p class="fonte_titulos"><b>GUIs com Python e PySide2</b></p>')
+        st.html('<p class="fonte_descricao">Se você desenvolveu um aplicativo mas não sabe como '
+                'dar "cara" a ele, você está no lugar certo! Nessas aulas veremos como criar uma '
+                'interface gráfica para o seu programa, ajudando a distribuí-lo e tornar mais acessível '
+                'o seu projeto.</p>')
+        acessar = st.button(
+            label='Acessar',
+            use_container_width=True,
+            key='pyside2'
+        )
+        if acessar:
+            st.switch_page('./pages/guis_python_pyside2/menu_guis_python_pyside2.py')
 
 # --- Inteligência artificial e ciências de dados para finanças --- #
 # with st.container(border=True):
@@ -109,21 +127,4 @@ with st.container(border=True):
 #             label='Acessar',
 #             use_container_width=True,
 #             key='criptografia_python'
-#         )
-#
-# # --- PySide2 --- #
-# with st.container(border=True):
-#     colunas = st.columns(2)
-#     with colunas[0]:
-#         st.image('./assets/imagens/pyside2/capa/capa.png')
-#     with colunas[1]:
-#         st.html('<p class="fonte_titulos"><b>GUIs com Python e PySide2</b></p>')
-#         st.html('<p class="fonte_descricao">Se você desenvolveu um aplicativo mas não sabe como '
-#                 'dar "cara" a ele, você está no lugar certo! Nessas aulas veremos como criar uma '
-#                 'interface gráfica para o seu programa, ajudando a distribuí-lo e tornar mais acessível '
-#                 'o seu projeto.</p>')
-#         acessar = st.button(
-#             label='Acessar',
-#             use_container_width=True,
-#             key='pyside2'
 #         )
