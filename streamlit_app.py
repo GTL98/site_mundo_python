@@ -4,30 +4,13 @@ import streamlit as st
 # --- Menu separado com as páginas --- #
 pg = st.navigation(
     {
-        'Página Inicial': [st.Page('./home.py', title='Página Inicial')],
-        'Curso Intensivo de Python': [
-            st.Page('./pages/curso_intensivo_python/menu_curso_intensivo_python.py', title='Aulas'),
-            st.Page('./pages/curso_intensivo_python/aula_01_curso_intensivo_python.py', title='Capítulo 01 - Baixar o Python'),
-            st.Page('./pages/curso_intensivo_python/aula_02_curso_intensivo_python.py', title='Capítulo 02 - Variáveis e tipos de dados simples'),
-            st.Page('./pages/curso_intensivo_python/aula_03_curso_intensivo_python.py', title='Capítulo 03 - Introdução à listas'),
-            st.Page('./pages/curso_intensivo_python/aula_04_curso_intensivo_python.py', title='Capítulo 04 - Trabalhando com listas')
+        'Página Inicial': [st.Page('home.py', title='Página Inicial')],
+        'Pandas Masterclass':[
+            st.Page('./pages/pandas_masterclass/menu_pandas_masterclass.py', title='Aulas'),
+            st.Page('./pages/pandas_masterclass/aula_01_pandas_masterclass.py', title='Aula 01: Criando seu Primeiro DataFrame'),
+            st.Page('./pages/pandas_masterclass/aula_02_pandas_masterclass.py', title='Aula 02: Domine a Importação de Dados'),
+            st.Page('./pages/pandas_masterclass/aula_03_pandas_masterclass.py', title='Aula 03:  Conheça Seu Dataset Como um Detetive!')
         ],
-        'IA com Scikit-Learn, Keras e Tensorflow': [
-            st.Page('./pages/ia_scikit_learn_keras_tensorflow/menu_ia_scikit_learn_keras_tensorflow.py', title='Aulas'),
-            st.Page('./pages/ia_scikit_learn_keras_tensorflow/aula_01_ia_scikit_learn_keras_tensorflow.py', title='Capítulo 01 - O cenário do aprendizado de máquina'),
-            st.Page('./pages/ia_scikit_learn_keras_tensorflow/aula_02_ia_scikit_learn_keras_tensorflow.py', title='Capítulo 02 - Projeto de aprendizado de máquina de ponta a ponta'),
-            #st.Page('./pages/ia_scikit_learn_keras_tensorflow/aula_03_ia_scikit_learn_keras_tensorflow.py', title='Capítulo 03 - Classificação')
-        ],
-        'Redes Neurais do Zero': [
-            st.Page('./pages/redes_neurais_zero/menu_redes_neurais_zero.py', title='Aulas'),
-            st.Page('./pages/redes_neurais_zero/aula_01_redes_neurais_zero.py', title='Capítulo 01 - Introdução à Redes Neurais'),
-            st.Page('./pages/redes_neurais_zero/aula_02_redes_neurais_zero.py', title='Capítulo 02 - Codando os nossos primeiros neurônios')
-        ],
-        'GUIs com Python e PySide2': [
-            st.Page('./pages/guis_python_pyside2/menu_guis_python_pyside2.py', title='Aulas'),
-            st.Page('./pages/guis_python_pyside2/aula_01_guis_python_pyside2.py', title='Capítulo 01 - Introdução à GUIs'),
-            st.Page('./pages/guis_python_pyside2/aula_02_guis_python_pyside2.py', title='Capítulo 02 - Seu primeiro App')
-        ]
     },
     position='top'
 )
