@@ -1,0 +1,58 @@
+.fonte_intro {
+    font-size:30px
+}
+.fonte_titulos {
+    font-size:48px
+}
+.fonte_descricao {
+    font-size:26px
+}
+.fonte_texto {
+    font-size:26px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.fonte_titulo_aula{
+    font-size: 42px
+}
+.fonte_subtitulo_aula{
+    font-size: 36px
+}
+.fonte_sub_subtitulo_aula{
+    font-size: 30px
+}
+ul {
+    padding-left: 25px;
+}
+ol {
+    padding-left: 25px;
+}
+.variaveis {
+    color: #A31515;
+    font-family: 'Courier New', monspace;
+    font-weight: bold
+}
+.funcoes_python{
+    color: #9900ff;
+    font-family: 'Courier New', monspace;
+    font-weight: bold
+}
+.texto_python{
+    font-family: 'Courier New', monspace;
+    font-weight: bold
+}
+.numeros{
+    color: #116644;
+    font-family: 'Courier New', monspace;
+    font-weight: bold
+}
+.palavras_reservadas{
+    color: #ff9900;
+    font-family: 'Courier New', monspace;
+    font-weight: bold
+}
+.erro_python{
+    color: #9723B4;
+    font-family: 'Courier New', monspace;
+    font-weight: bold
+}
