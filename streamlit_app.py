@@ -9,8 +9,12 @@ pg = st.navigation(
             st.Page('./pages/pandas_masterclass/menu_pandas_masterclass.py', title='Aulas'),
             st.Page('./pages/pandas_masterclass/aula_01_pandas_masterclass.py', title='Aula 01: Criando seu Primeiro DataFrame'),
             st.Page('./pages/pandas_masterclass/aula_02_pandas_masterclass.py', title='Aula 02: Domine a Importação de Dados'),
-            st.Page('./pages/pandas_masterclass/aula_03_pandas_masterclass.py', title='Aula 03:  Conheça Seu Dataset Como um Detetive!')
+            st.Page('./pages/pandas_masterclass/aula_03_pandas_masterclass.py', title='Aula 03: Explorando Dados')
         ],
+        'Python para Excel': [
+            st.Page('./pages/python_excel/menu_python_excel.py', title='Aulas'),
+            st.Page('./pages/python_excel/aula_01_python_excel.py', title='Aula 01: Criando seu Primeiro Arquivo Excel com openpyxl')
+        ]
     },
     position='top'
 )

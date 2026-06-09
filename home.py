@@ -39,3 +39,22 @@ with st.container(border=True):
         )
         if acessar:
             st.switch_page('./pages/pandas_masterclass/menu_pandas_masterclass.py')
+
+# --- Python para Excel --- #
+with st.container(border=True):
+    colunas = st.columns(2, vertical_alignment='center')
+    with colunas[0]:
+        st.image('./assets/imagens/python_excel/capa/capa.png')
+    with colunas[1]:
+        st.html('<p class="fonte_titulos"><b>Curso Completo de Python para Excel: Do Zero ao Especialista</b></p>')
+        st.html('<p class="fonte_descricao">Se você trabalha com Excel e não aguenta mais fazer tarefas '
+                'repetitivas, este é o curso ideal para você! Aqui você verá como automatizar planilhas '
+                'enormes com poucas linhas em Python; e o melhor de tudo: de um keito bem fácil '
+                'de aprender!')
+        acessar = st.button(
+            label='Acessar',
+            width='stretch',
+            key='python_excel'
+        )
+        if acessar:
+            st.switch_page('./pages/python_excel/menu_python_excel.py')
