@@ -18,7 +18,7 @@ st.html('<h1 class="fonte_titulo_aula">Aula 01: Widgets, Layout e Persistência!
 
 # --- Vídeo --- #
 with st.expander('Se quiser acompanhar com o vídeo, acesse aqui! 👇'):
-    st.video('https://youtu.be/N1nsnorupxY')
+    st.video('https://youtu.be/ZPSdj4b7wsc')
 
 # --- Código da aula --- #
 st.subheader('Se quiser acessar o código completo da aula, clique [aqui](https://github.com/GTL98/canal_mundo_python/blob/main/Streamlit%20Full-Stack%3A%20Crie%20Aplica%C3%A7%C3%B5es%20Web%20Completas%20com%20Python/Aula%2001/aula_01.py)')
