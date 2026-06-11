@@ -15,11 +15,16 @@ st.set_page_config(
 with open('./assets/css/style.css', 'r') as css:
     st.html(f'<style>{css.read()}</style>')
 
-# --- Colocar o banner do capítulo --- #
-st.image('./assets/imagens/pandas_masterclass/aula_03/banner_aula_03.png', width='stretch')
+# --- Colocar o título da aula --- #
+st.html('<h1 class="fonte_titulo_aula">Aula 03: Explorando Dados</h1>')
 
-# --- Link do vídeo --- #
-st.subheader('Para assitir essa aula, clique [aqui](https://youtu.be/WoRAylZCwI8).')
+# --- Vídeo --- #
+with st.expander('Se quiser acompanhar com o vídeo, acesse aqui! 👇'):
+    st.video('https://youtu.be/WoRAylZCwI8')
+
+# --- Código da aula --- #
+st.subheader('Se quiser acessar o código completo da aula, clique [aqui](https://github.com/GTL98/canal_mundo_python/blob/main/Pandas%20Masterclass%3A%20Do%20Zero%20ao%20Her%C3%B3i%20dos%20Dados/Aula%2003/aula_03.ipynb)')
+st.divider()
 
 # --- Introdução --- #
 st.subheader('E fala, devs! Tudo bem com vocês? Espero que sim!')
@@ -409,6 +414,3 @@ ferramentas de precisão para a decifração da realidade contida nos números. 
 dados não reside na complexidade do modelo final, mas na profundidade e no rigor do primeiro olhar 
 sobre o conjunto de dados.''')
 st.subheader('No mais é isso, nos vemos na próxima aula! Até lá, fiquem com Deus e fui!')
-
-# --- Link do vídeo --- #
-st.subheader('Para assitir essa aula, clique [aqui](https://youtu.be/WoRAylZCwI8).')

@@ -14,6 +14,10 @@ pg = st.navigation(
         'Python para Excel': [
             st.Page('./pages/python_excel/menu_python_excel.py', title='Aulas'),
             st.Page('./pages/python_excel/aula_01_python_excel.py', title='Aula 01: Criando seu Primeiro Arquivo Excel com openpyxl')
+        ],
+        'Streamlit Full-Stack': [
+            st.Page('./pages/streamlit_fullstack/menu_streamlit_fullstack.py', title='Aulas'),
+            st.Page('./pages/streamlit_fullstack/aula_01_streamlit_fullstack.py', title='Aula 01: Widgets, Layout e Persistência')
         ]
     },
     position='top'

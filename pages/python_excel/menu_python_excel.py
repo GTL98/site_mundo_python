@@ -29,3 +29,15 @@ with colunas[0]:
     )
     if acessar:
         st.switch_page('./pages/python_excel/aula_01_python_excel.py')
+
+with colunas[1]:
+    st.image('./assets/imagens/python_excel/aula_02/capa_aula_02.png')
+    st.write('Aula 02: Múltiplas Abas, Iteração Inteligente e Tratamento de Dados! 📑🔍')
+    st.subheader('Em breve')
+    # acessar = st.button(
+    #     label='Acessar',
+    #     width='stretch',
+    #     key='aula_02'
+    # )
+    # if acessar:
+    #     st.switch_page('./pages/python_excel/aula_02_python_excel.py')

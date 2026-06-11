@@ -1,5 +1,4 @@
 # --- Importar as bibliotecas --- #
-import pandas as pd
 from PIL import Image
 import streamlit as st
 
@@ -14,11 +13,16 @@ st.set_page_config(
 with open('./assets/css/style.css', 'r') as css:
     st.html(f'<style>{css.read()}</style>')
 
-# --- Colocar o banner do capítulo --- #
-st.image('./assets/imagens/python_excel/aula_01/banner_aula_01.png', width='stretch')
+# --- Colocar o título da aula --- #
+st.html('<h1 class="fonte_titulo_aula">Criando seu Primeiro Arquivo Excel com openpyxl!</h1>')
 
-# --- Link do vídeo --- #
-st.subheader('Para assitir essa aula, clique [aqui](https://youtu.be/N1nsnorupxY).')
+# --- Vídeo --- #
+with st.expander('Se quiser acompanhar com o vídeo, acesse aqui! 👇'):
+        st.video('https://youtu.be/N1nsnorupxY')
+
+# --- Código da aula --- #
+st.subheader('Se quiser acessar o código completo da aula, clique [aqui](https://github.com/GTL98/canal_mundo_python/blob/main/Curso%20Completo%20de%20Python%20para%20Excel%3A%20Do%20Zero%20ao%20Especialista/Aula%2001/aula_01.ipynb)')
+st.divider()
 
 # --- Introdução --- #
 st.subheader('E fala, devs! Tudo bem com vocês? Espero que sim!')
@@ -297,6 +301,3 @@ para projetar relatórios elegantes para analistas de negócios ou integrar
 complexos conjuntos de dados provenientes de bancos relacionais diretamente em planilhas prontas para 
 o consumo corporativo.</p>''')
 st.subheader('No mais é isso, nos vemos na próxima aula! Até lá, fiquem com Deus e fui!')
-
-# --- Link do vídeo --- #
-st.subheader('Para assitir essa aula, clique [aqui](https://youtu.be/N1nsnorupxY).')

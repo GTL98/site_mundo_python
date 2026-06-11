@@ -15,11 +15,16 @@ st.set_page_config(
 with open('./assets/css/style.css', 'r') as css:
     st.html(f'<style>{css.read()}</style>')
 
-# --- Colocar o banner do capítulo --- #
-st.image('./assets/imagens/pandas_masterclass/aula_02/banner_aula_02.png', width='stretch')
+# --- Colocar o título da aula --- #
+st.html('<h1 class="fonte_titulo_aula">Aula 02: Domine a Importação de Dados</h1>')
 
-# --- Link do vídeo --- #
-st.subheader('Para assitir essa aula, clique [aqui](https://youtu.be/uSPPRzi5dMQ).')
+# --- Vídeo --- #
+with st.expander('Se quiser acompanhar com o vídeo, acesse aqui! 👇'):
+        st.video('https://youtu.be/uSPPRzi5dMQ')
+
+# --- Código da aula --- #
+st.subheader('Se quiser acessar o código completo da aula, clique [aqui](https://github.com/GTL98/canal_mundo_python/blob/main/Pandas%20Masterclass%3A%20Do%20Zero%20ao%20Her%C3%B3i%20dos%20Dados/Aula%2002/aula_02.ipynb)')
+st.divider()
 
 # --- Introdução --- #
 st.subheader('E fala, devs! Tudo bem com vocês? Espero que sim!')
@@ -461,6 +466,3 @@ st.html("<p class='fonte_texto'>Para o programador Python avançado, o domínio 
         "liberdade de desenhar soluções que escalam conforme a necessidade do negócio, garantindo a "
         "fidelidade dos dados desde a origem até o insight final.</p>")
 st.subheader('No mais é isso, nos vemos na próxima aula! Até lá, fiquem com Deus e fui!')
-
-# --- Link do vídeo --- #
-st.subheader('Para assitir essa aula, clique [aqui](https://youtu.be/uSPPRzi5dMQ).')

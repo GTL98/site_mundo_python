@@ -49,7 +49,7 @@ with st.container(border=True):
         st.html('<p class="fonte_titulos"><b>Curso Completo de Python para Excel: Do Zero ao Especialista</b></p>')
         st.html('<p class="fonte_descricao">Se você trabalha com Excel e não aguenta mais fazer tarefas '
                 'repetitivas, este é o curso ideal para você! Aqui você verá como automatizar planilhas '
-                'enormes com poucas linhas em Python; e o melhor de tudo: de um keito bem fácil '
+                'enormes com poucas linhas em Python; e o melhor de tudo: de um jeito bem fácil '
                 'de aprender!')
         acessar = st.button(
             label='Acessar',
@@ -58,3 +58,21 @@ with st.container(border=True):
         )
         if acessar:
             st.switch_page('./pages/python_excel/menu_python_excel.py')
+
+# --- Streamlit Fullstack --- #
+with st.container(border=True):
+    colunas = st.columns(2, vertical_alignment='center')
+    with colunas[0]:
+        st.image('./assets/imagens/streamlit_fullstack/capa/capa.png')
+    with colunas[1]:
+        st.html('<p class="fonte_titulos"><b>Streamlit Full-Stack: Crie Aplicações Web Completas com Python</b></p>')
+        st.html('<p class="fonte_descricao">Se você quer criar sites profissionais de modo rápido e simples, '
+                'este curso é para você! Aqui veremos como criar dashboards completos e sites topo de linha '
+                'com Streamlit. E o melhor: totalmente em Python!')
+        acessar = st.button(
+            label='Acessar',
+            width='stretch',
+            key='streamlit_fullstack'
+        )
+        if acessar:
+            st.switch_page('./pages/streamlit_fullstack/menu_streamlit_fullstack.py')
