@@ -36,6 +36,7 @@ reexecução linear) até a implementação de componentes visuais avançados e 
 estado de duas vias diretamente na URL do navegador. Ao longo desta aula, aprenderemos a estruturar 
 interfaces dinâmicas, validar entradas de dados temporais e criar aplicações compartilháveis com estados 
 altamente consistentes.</p>''')
+st.subheader('Então sem mais delongas, bora para a aula!')
 st.divider()
 
 # --- O Paradigma da Reexecução Linear e Hierarquia Visual --- #

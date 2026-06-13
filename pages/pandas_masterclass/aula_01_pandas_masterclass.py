@@ -38,6 +38,7 @@ st.html('<p class="fonte_texto">A análise de dados moderna no ecossistema Pytho
         'dedica-se a explorar a gênese dessas estruturas, desde a sua criação manual até a dissecação de '
         'sua anatomia interna, estabelecendo uma base sólida para qualquer desenvolvedor que pretenda '
         'transitar do código procedural para a análise de dados profissional.</p>')
+st.subheader('Então sem mais delongas, bora para a aula!')
 st.divider()
 
 # --- O Paradigma do Pandas e a Preparação do Ambiente --- #

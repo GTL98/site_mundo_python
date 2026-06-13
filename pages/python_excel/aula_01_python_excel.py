@@ -14,7 +14,7 @@ with open('./assets/css/style.css', 'r') as css:
     st.html(f'<style>{css.read()}</style>')
 
 # --- Colocar o título da aula --- #
-st.html('<h1 class="fonte_titulo_aula">Criando seu Primeiro Arquivo Excel com openpyxl!</h1>')
+st.html('<h1 class="fonte_titulo_aula">Aula 01: Criando seu Primeiro Arquivo Excel com openpyxl!</h1>')
 
 # --- Vídeo --- #
 with st.expander('Se quiser acompanhar com o vídeo, acesse aqui! 👇'):
@@ -35,6 +35,7 @@ amplamente conhecidos pela extensão <span class='texto_python'>.xlsx</span>. Es
 maneira aprofundada os conceitos necessários para inicializar ambientes, manipular pastas de trabalho 
 diretamente na memória RAM, inserir dados sob diferentes paradigmas e persistir informações de forma 
 segura no disco físico.</p>''')
+st.subheader('Então sem mais delongas, bora para a aula!')
 st.divider()
 
 # --- Configuração do Ambiente e Instalação do Pacote --- #

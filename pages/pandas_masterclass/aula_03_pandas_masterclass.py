@@ -44,6 +44,7 @@ st.html('<p class="fonte_texto">A prática da ciência de dados começa muito an
         'Através de uma abordagem didática e técnica, este capítulo desmembra os comandos essenciais que '
         'servem como as primeiras ferramentas de qualquer analista: o exame visual, a validação '
         'estrutural, o diagnóstico de metadados e o mapeamento estatístico descritivo.</p>')
+st.subheader('Enão sem mais delongas, bora para a aula!')
 st.divider()
 
 # --- O Alicerce Tecnológico: Configuração e Importação --- #

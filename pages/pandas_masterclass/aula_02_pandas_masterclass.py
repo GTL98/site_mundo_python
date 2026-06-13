@@ -38,6 +38,7 @@ st.html('<p class="fonte_texto">A base de qualquer sistema de análise de dados 
         'elas arquivos de texto, planilhas corporativas ou formatos binários otimizados, exige uma '
         'compreensão profunda dos parâmetros de configuração e das implicações arquiteturais de '
         'cada escolha.</p>')
+st.subheader('Então sem mais delongas, bora para a aula!')
 st.divider()
 
 # --- O Ecossistema de Manipulação de Dados: Fundamentos de NumPy e Pandas --- #
