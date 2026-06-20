@@ -1,6 +1,7 @@
 # --- Importar as bibliotecas --- #
 from PIL import Image
 import streamlit as st
+from carregar_css import carregar_css
 
 
 # --- Configurações iniciais da página --- #
@@ -11,8 +12,7 @@ st.set_page_config(
 )
 
 # --- Carregar o CSS --- #
-with open('./assets/css/style.css', 'r') as css:
-    st.html(f'<style>{css.read()}</style>')
+carregar_css()
 
 # --- Colocar o banner do curso --- #
 st.image('./assets/imagens/pandas_masterclass/capa/capa.png', width='stretch')

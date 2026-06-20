@@ -1,18 +1,17 @@
 # --- Importar as bibliotecas --- #
 from PIL import Image
 import streamlit as st
+from carregar_css import carregar_css
 
 # --- Configurações iniciais da página --- #
 st.set_page_config(
     page_title='Mundo Python',
     page_icon=Image.open('./assets/logo/logo.png'),
-    layout='wide',
-    initial_sidebar_state='collapsed'
+    layout='wide'
 )
 
-# --- Carregar o estilo das fontes --- #
-with open('./assets/css/style.css', 'r') as css:
-    st.html(f'<style>{css.read()}</style>')
+# --- Carregar o CSS --- #
+carregar_css()
 
 # --- Colocar o banner do site --- #
 st.image('./assets/banner/banner_escrito.png')
@@ -76,3 +75,22 @@ with st.container(border=True):
         )
         if acessar:
             st.switch_page('./pages/streamlit_fullstack/menu_streamlit_fullstack.py')
+
+# --- KivyMD Multiplataforma --- #
+with st.container(border=True):
+    colunas = st.columns(2, vertical_alignment='center')
+    with colunas[0]:
+        st.image('./assets/imagens/kivymd_multiplataforma/capa/capa.png')
+    with colunas[1]:
+        st.html('<p class="fonte_titulos"><b>KivyMD Multiplataforma: Do Zero ao App Multiplataforma</b></p>')
+        st.html('<p class="fonte_descricao">Se você acha que o Python não consegue criar aplicativos mobile, '
+                'então esse curso é para você! Aqui veremos como podemos criar aplicativos mobile '
+                'profissionais somente com Python, de modo simples e fácil de aprender. '
+                'Então cola com a gente e veja o poder que o Python tem!')
+        acessar = st.button(
+            label='Acessar',
+            width='stretch',
+            key='kivymd_multiplataforma'
+        )
+        if acessar:
+            st.switch_page('./pages/kivymd_multiplataforma/menu_kivymd_multiplataforma.py')

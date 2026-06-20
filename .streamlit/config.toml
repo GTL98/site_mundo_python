@@ -1,0 +1,15 @@
+[theme]
+# O azul vibrante e claro característico de links e destaques da época
+primaryColor = "#00a8ff"
+
+# Fundo branco/gelo limpo
+backgroundColor = "#f0f8ff"
+
+# Um tom de azul/verde bem claro para os painéis laterais e caixas de fundo
+secondaryBackgroundColor = "#dff9fb"
+
+# Texto escuro (mas não 100% preto) para leitura confortável
+textColor = "#2c3e50"
+
+# O Frutiger Aero usava fontes limpas sem serifa (como Segoe UI, Frutiger, Helvetica)
+font = "sans serif"

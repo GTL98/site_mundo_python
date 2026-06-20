@@ -5,6 +5,10 @@ import streamlit as st
 pg = st.navigation(
     {
         'Página Inicial': [st.Page('home.py', title='Página Inicial')],
+        'KivyMD Multiplataforma': [
+            st.Page('./pages/kivymd_multiplataforma/menu_kivymd_multiplataforma.py', title='Aulas'),
+            st.Page('./pages/kivymd_multiplataforma/aula_01_kivymd_multiplataforma.py', title='Aula 01: Tema, Tela e Ciclo de Vida!')
+        ],
         'Pandas Masterclass':[
             st.Page('./pages/pandas_masterclass/menu_pandas_masterclass.py', title='Aulas'),
             st.Page('./pages/pandas_masterclass/aula_01_pandas_masterclass.py', title='Aula 01: Criando seu Primeiro DataFrame'),
@@ -21,6 +25,6 @@ pg = st.navigation(
             st.Page('./pages/streamlit_fullstack/aula_01_streamlit_fullstack.py', title='Aula 01: Widgets, Layout e Persistência')
         ]
     },
-    position='top'
+    position='sidebar'
 )
 pg.run()

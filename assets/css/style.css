@@ -29,30 +29,77 @@ ol {
 }
 .variaveis {
     color: #A31515;
-    font-family: 'Courier New', monspace;
+    font-family: 'Courier New', monospace;
     font-weight: bold
 }
 .funcoes_python{
     color: #9900ff;
-    font-family: 'Courier New', monspace;
+    font-family: 'Courier New', monospace;
     font-weight: bold
 }
 .texto_python{
-    font-family: 'Courier New', monspace;
+    font-family: 'Courier New', monospace;
     font-weight: bold
 }
 .numeros{
     color: #116644;
-    font-family: 'Courier New', monspace;
+    font-family: 'Courier New', monospace;
     font-weight: bold
 }
 .palavras_reservadas{
     color: #ff9900;
-    font-family: 'Courier New', monspace;
+    font-family: 'Courier New', monospace;
     font-weight: bold
 }
 .erro_python{
     color: #9723B4;
-    font-family: 'Courier New', monspace;
+    font-family: 'Courier New', monospace;
     font-weight: bold
+}
+.classe_python{
+    color: #14C403;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+.funcao_python{
+    color: #FFC66D;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+.self_python{
+    color: #94558D;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+/* 1. Botões com efeito "Glossy" (Brilhante e com volume) */
+.stButton > button {
+    background: linear-gradient(180deg, #48dbfb 0%, #0abde3 50%, #0097e6 100%) !important;
+    color: white !important;
+    border: 1px solid #0097e6 !important;
+    border-radius: 20px !important;
+    box-shadow: inset 0px 2px 5px rgba(255, 255, 255, 0.7),
+                0px 4px 6px rgba(0, 0, 0, 0.2) !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    transition: all 0.2s ease-in-out !important;
+}
+
+/* Efeito ao passar o mouse no botão */
+.stButton > button:hover {
+    background: linear-gradient(180deg, #81ecec 0%, #48dbfb 50%, #0abde3 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: inset 0px 2px 5px rgba(255, 255, 255, 0.9),
+                0px 6px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 2. Forçando os itens internos da nova navegação a ficarem transparentes
+      para que a imagem da sidebar possa ser vista através deles */
+[data-testid="stSidebarNav"],
+[data-testid="stSidebarNav"] > div,
+[data-testid="stSidebarNav"] ul,
+[data-testid="stSidebarNav"] li,
+[data-testid="stSidebarContent"],
+[data-testid="stSidebarHeader"] {
+    background-color: transparent !important;
+    background: transparent !important;
 }

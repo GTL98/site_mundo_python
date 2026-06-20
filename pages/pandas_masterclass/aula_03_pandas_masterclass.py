@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 import streamlit as st
+from carregar_css import carregar_css
 
 # --- Configurações iniciais da página --- #
 st.set_page_config(
@@ -11,9 +12,8 @@ st.set_page_config(
     layout='wide'
 )
 
-# --- Carregar o estilo das fontes --- #
-with open('./assets/css/style.css', 'r') as css:
-    st.html(f'<style>{css.read()}</style>')
+# --- Carregar o CSS --- #
+carregar_css()
 
 # --- Colocar o título da aula --- #
 st.html('<h1 class="fonte_titulo_aula">Aula 03: Explorando Dados</h1>')
