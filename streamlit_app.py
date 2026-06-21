@@ -15,6 +15,10 @@ pg = st.navigation(
             st.Page('./pages/pandas_masterclass/aula_02_pandas_masterclass.py', title='Aula 02: Domine a Importação de Dados'),
             st.Page('./pages/pandas_masterclass/aula_03_pandas_masterclass.py', title='Aula 03: Explorando Dados')
         ],
+        'PySide6 Maestria': [
+            st.Page('./pages/pyside6_maestria/menu_pyside6_maestria.py', title='Aulas'),
+            st.Page('./pages/pyside6_maestria/aula_01_pyside6_maestria.py', title='Aula 01: Ciclo de Vida da QApplication')
+        ],
         'Python para Excel': [
             st.Page('./pages/python_excel/menu_python_excel.py', title='Aulas'),
             st.Page('./pages/python_excel/aula_01_python_excel.py', title='Aula 01: Criando seu Primeiro Arquivo Excel com openpyxl'),

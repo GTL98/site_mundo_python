@@ -20,6 +20,25 @@ st.image('./assets/banner/banner_escrito.png')
 st.html('<p class="fonte_intro">Bem-vindo ao Mundo Python! Aqui você aprenderá desde o começo a linguagem de programação '
         'Python, desenvolverá projetos em diversas áreas e criará um portifólio muito bem consolidado!</p>')
 
+# --- KivyMD Multiplataforma --- #
+with st.container(border=True):
+    colunas = st.columns(2, vertical_alignment='center')
+    with colunas[0]:
+        st.image('./assets/imagens/kivymd_multiplataforma/capa/capa.png')
+    with colunas[1]:
+        st.html('<p class="fonte_titulos"><b>KivyMD Multiplataforma: Do Zero ao App Multiplataforma</b></p>')
+        st.html('<p class="fonte_descricao">Se você acha que o Python não consegue criar aplicativos mobile, '
+                'então esse curso é para você! Aqui veremos como podemos criar aplicativos mobile '
+                'profissionais somente com Python, de modo simples e fácil de aprender. '
+                'Então cola com a gente e veja o poder que o Python tem!')
+        acessar = st.button(
+            label='Acessar',
+            width='stretch',
+            key='kivymd_multiplataforma'
+        )
+        if acessar:
+            st.switch_page('./pages/kivymd_multiplataforma/menu_kivymd_multiplataforma.py')
+
 # --- Pandas Masterclass --- #
 with st.container(border=True):
     colunas = st.columns(2, vertical_alignment='center')
@@ -38,6 +57,24 @@ with st.container(border=True):
         )
         if acessar:
             st.switch_page('./pages/pandas_masterclass/menu_pandas_masterclass.py')
+
+# --- PySide6 Maestria --- #
+with st.container(border=True):
+    colunas = st.columns(2, vertical_alignment='center')
+    with colunas[0]:
+        st.image('./assets/imagens/pyside6_maestria/capa/capa.png')
+    with colunas[1]:
+        st.html('<p class="fonte_titulos"><b>Maestria em PySide6: O Guia Definitivo</b></p>')
+        st.html('<p class="fonte_descricao">Se você quer dar uma cara ao seu programa, esse curso '
+                'é para você! Aqui você aprenderá a criar aplicativos desktop profissionais '
+                'com o PySide6 de modo simples e fácil, e claro, totalmente em Python!')
+        acessar = st.button(
+            label='Acessar',
+            width='stretch',
+            key='pyside6_maestria'
+        )
+        if acessar:
+            st.switch_page('./pages/pyside6_maestria/menu_pyside6_maestria.py')
 
 # --- Python para Excel --- #
 with st.container(border=True):
@@ -75,22 +112,3 @@ with st.container(border=True):
         )
         if acessar:
             st.switch_page('./pages/streamlit_fullstack/menu_streamlit_fullstack.py')
-
-# --- KivyMD Multiplataforma --- #
-with st.container(border=True):
-    colunas = st.columns(2, vertical_alignment='center')
-    with colunas[0]:
-        st.image('./assets/imagens/kivymd_multiplataforma/capa/capa.png')
-    with colunas[1]:
-        st.html('<p class="fonte_titulos"><b>KivyMD Multiplataforma: Do Zero ao App Multiplataforma</b></p>')
-        st.html('<p class="fonte_descricao">Se você acha que o Python não consegue criar aplicativos mobile, '
-                'então esse curso é para você! Aqui veremos como podemos criar aplicativos mobile '
-                'profissionais somente com Python, de modo simples e fácil de aprender. '
-                'Então cola com a gente e veja o poder que o Python tem!')
-        acessar = st.button(
-            label='Acessar',
-            width='stretch',
-            key='kivymd_multiplataforma'
-        )
-        if acessar:
-            st.switch_page('./pages/kivymd_multiplataforma/menu_kivymd_multiplataforma.py')
