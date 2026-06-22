@@ -367,3 +367,4 @@ st.html('''<p class="fonte_texto">Ao incorporar componentes de seleção moderno
 interno da aplicação diretamente aos parâmetros de consulta da URL do navegador, o desenvolvedor 
 Python adquire a habilidade de construir produtos de dados altamente profissionais, intuitivos, de 
 alto desempenho e facilmente compartilháveis em qualquer ambiente corporativo.</p>''')
+st.subheader('No mais é isso, nos vemos na próxima aula! Até lá, fiquem com Deus e fui!')

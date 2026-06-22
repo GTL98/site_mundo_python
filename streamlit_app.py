@@ -26,7 +26,8 @@ pg = st.navigation(
         ],
         'Streamlit Full-Stack': [
             st.Page('./pages/streamlit_fullstack/menu_streamlit_fullstack.py', title='Aulas'),
-            st.Page('./pages/streamlit_fullstack/aula_01_streamlit_fullstack.py', title='Aula 01: Widgets, Layout e Persistência')
+            st.Page('./pages/streamlit_fullstack/aula_01_streamlit_fullstack.py', title='Aula 01: Widgets, Layout e Persistência'),
+            st.Page('./pages/streamlit_fullstack/aula_02_streamlit_fullstack.py', title='Aula 02: Layouts Avançados – Colunas, Abas e Popovers')
         ]
     },
     position='sidebar'

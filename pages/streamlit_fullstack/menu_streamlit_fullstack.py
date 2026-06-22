@@ -31,14 +31,13 @@ with colunas[0]:
 with colunas[1]:
     st.image('./assets/imagens/streamlit_fullstack/aula_02/capa_aula_02.png')
     st.write('Aula 02: Layouts Avançados – Colunas, Abas e Popovers! 📐🚀')
-    st.subheader('Em breve')
-#     acessar = st.button(
-#         label='Acessar',
-#         width='stretch',
-#         key='aula_02'
-#     )
-#     if acessar:
-#         st.switch_page('./pages/streamlit_fullstack/aula_02_streamlit_fullstack.py')
+    acessar = st.button(
+        label='Acessar',
+        width='stretch',
+        key='aula_02'
+    )
+    if acessar:
+        st.switch_page('./pages/streamlit_fullstack/aula_02_streamlit_fullstack.py')
 
 with colunas[2]:
     st.image('./assets/imagens/streamlit_fullstack/aula_03/capa_aula_03.png')
