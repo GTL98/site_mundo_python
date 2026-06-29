@@ -7,7 +7,8 @@ pg = st.navigation(
         'Página Inicial': [st.Page('home.py', title='Página Inicial')],
         'KivyMD Multiplataforma': [
             st.Page('./pages/kivymd_multiplataforma/menu_kivymd_multiplataforma.py', title='Aulas'),
-            st.Page('./pages/kivymd_multiplataforma/aula_01_kivymd_multiplataforma.py', title='Aula 01: Tema, Tela e Ciclo de Vida!')
+            st.Page('./pages/kivymd_multiplataforma/aula_01_kivymd_multiplataforma.py', title='Aula 01: Tema, Tela e Ciclo de Vida!'),
+            st.Page('./pages/kivymd_multiplataforma/aula_02_kivymd_multiplataforma.py', title='Aula 02: Estrutura KV – Integrando Interface e Lógica!')
         ],
         'Pandas Masterclass':[
             st.Page('./pages/pandas_masterclass/menu_pandas_masterclass.py', title='Aulas'),

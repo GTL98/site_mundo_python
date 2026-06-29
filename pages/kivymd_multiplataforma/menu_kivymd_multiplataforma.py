@@ -32,14 +32,13 @@ with colunas[0]:
 with colunas[1]:
     st.image('./assets/imagens/kivymd_multiplataforma/aula_02/capa_aula_02.png')
     st.write('Aula 02: Estrutura KV – Integrando Interface e Lógica! 🧩📱')
-    st.subheader('Em breve')
-#     acessar = st.button(
-#         label='Acessar',
-#         width='stretch',
-#         key='aula_02'
-#     )
-#     if acessar:
-#         st.switch_page('./pages/kivymd_multiplataforma/aula_02_kivymd_multiplataforma.py')
+    acessar = st.button(
+        label='Acessar',
+        width='stretch',
+        key='aula_02'
+    )
+    if acessar:
+        st.switch_page('./pages/kivymd_multiplataforma/aula_02_kivymd_multiplataforma.py')
 
 with colunas[2]:
     st.image('./assets/imagens/kivymd_multiplataforma/aula_03/capa_aula_03.png')
