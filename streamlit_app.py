@@ -23,7 +23,8 @@ pg = st.navigation(
         'Python para Excel': [
             st.Page('./pages/python_excel/menu_python_excel.py', title='Aulas'),
             st.Page('./pages/python_excel/aula_01_python_excel.py', title='Aula 01: Criando seu Primeiro Arquivo Excel com openpyxl'),
-            st.Page('./pages/python_excel/aula_02_python_excel.py', title='Aula 02: Múltiplas Abas, Iteração Inteligente e Tratamento de Dados')
+            st.Page('./pages/python_excel/aula_02_python_excel.py', title='Aula 02: Múltiplas Abas, Iteração Inteligente e Tratamento de Dados'),
+            st.Page('./pages/python_excel/aula_03_python_excel.py', title='Aula 03: Estilização Profissional – Cores, Fontes, Bordas e Formatação')
         ],
         'Streamlit Full-Stack': [
             st.Page('./pages/streamlit_fullstack/menu_streamlit_fullstack.py', title='Aulas'),

@@ -39,3 +39,14 @@ with colunas[1]:
     )
     if acessar:
         st.switch_page('./pages/python_excel/aula_02_python_excel.py')
+
+with colunas[2]:
+    st.image('./assets/imagens/python_excel/aula_03/capa_aula_03.png')
+    st.write('Aula 03: Estilização Profissional – Cores, Fontes, Bordas e Formatação! 🎨📊')
+    acessar = st.button(
+        label='Acessar',
+        width='stretch',
+        key='aula_03'
+    )
+    if acessar:
+        st.switch_page('./pages/python_excel/aula_03_python_excel.py')
