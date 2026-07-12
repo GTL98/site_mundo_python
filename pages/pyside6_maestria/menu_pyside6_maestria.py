@@ -32,14 +32,13 @@ with colunas[0]:
 with colunas[1]:
     st.image('./assets/imagens/pyside6_maestria/aula_02/capa_aula_02.png')
     st.write('Aula 02: Menus, Toolbars e Status Bar – Aplicações Profissionais! 🛠️')
-    st.subheader('Em breve')
-#     acessar = st.button(
-#         label='Acessar',
-#         width='stretch',
-#         key='aula_02'
-#     )
-#     if acessar:
-#         st.switch_page('./pages/pyside6_maestria/aula_02_pyside6_maestria.py')
+    acessar = st.button(
+        label='Acessar',
+        width='stretch',
+        key='aula_02'
+    )
+    if acessar:
+        st.switch_page('./pages/pyside6_maestria/aula_02_pyside6_maestria.py')
 
 with colunas[2]:
     st.image('./assets/imagens/pyside6_maestria/aula_03/capa_aula_03.png')

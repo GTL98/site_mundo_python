@@ -18,7 +18,8 @@ pg = st.navigation(
         ],
         'PySide6 Maestria': [
             st.Page('./pages/pyside6_maestria/menu_pyside6_maestria.py', title='Aulas'),
-            st.Page('./pages/pyside6_maestria/aula_01_pyside6_maestria.py', title='Aula 01: Ciclo de Vida da QApplication')
+            st.Page('./pages/pyside6_maestria/aula_01_pyside6_maestria.py', title='Aula 01: Ciclo de Vida da QApplication'),
+            st.Page('./pages/pyside6_maestria/aula_02_pyside6_maestria.py', title='Aula 02: Menus, Toolbars e Status Bar – Aplicações Profissionais')
         ],
         'Python para Excel': [
             st.Page('./pages/python_excel/menu_python_excel.py', title='Aulas'),
